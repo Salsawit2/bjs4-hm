@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P id="a"></P>
+<P id="b"></P>
+<script>
+    var x= 20;
+    var y = 90;
+    document.getElementById("a").innerHTML= x+y;
+    document.getElementById("b").innerHTML= String(x) + String(y);
+    document.write(typeof(x))
+    //does not add bc it is sting it concatenates
+</script>
+ <h2>js error handling</h2>
+<p id="k"></p>
+<script>
+    try{
+        addalert("wont work here")
+    }
+    catch(sss){
+        document.getElementById("k").innerHTML= sss.message;
+    }
+</script>
+</body>
+</html>
